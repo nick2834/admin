@@ -1,0 +1,52 @@
+<nav class="breadcrumb ng-scope">
+    <i class="Hui-iconfont"></i> <a ui-sref="home">首页</a> <span class="c-gray en">&gt;</span> <a ui-sref="userList">用户列表</a><span class="c-gray en">&gt;</span>{{title}}
+    <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href='javascript:location.reload()' title="刷新">
+    <i class="Hui-iconfont"></i></a>
+</nav>
+<article class="page-container">
+    <div class="commonIit">用户基本信息</div>
+    <div class="tableCon">
+        <table class="tableMain" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <th width="5%">用户ID</th>
+                <th width="10%">用户名</th>
+                <th width="10%">昵称</th>
+                <th width="5%">内部用户姓名</th>
+                <th width="5%">电话</th>
+                <th width="5%">性别</th>
+                <th width="15%">状态</th>
+                <th width="10%">邀请人</th>
+            </tr>
+            <tr>
+                <td>{{userCon.id}}</td>
+                <td>{{userCon.name}}</td>
+                <td>{{userCon.nickname}}</td>
+                <td>内部用户姓名</td>
+                <td>{{userCon.phone}}</td>
+                <td>{{userCon.gender | gender}}</td>
+                <td>黑名单</td>
+                <td><a href="">测试</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="commonIit">邀请用户列表</div>
+    <div class="tableCon">
+        <table class="tableMain" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <th width="10%">被邀请人ID</th>
+                <th width="10%">被邀请人名称</th>
+                <th width="10%">被邀请人手机号</th>
+                <th width="10%">被邀请人所获收益</th>
+                <th width="10%">被邀请人注册时间</th>
+            </tr>
+            <tr>
+                <td>2834</td>
+                <td><a href="">少年锦时</a></td>
+                <td>13800013800</td>
+                <td>￥ 999.999</td>
+                <td>2017-11-18 12：23：08</td>
+            </tr>
+        </table>
+    </div>
+    <page-con></page-con>
+</article>
