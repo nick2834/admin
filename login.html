@@ -71,7 +71,7 @@
             e.prevenDefault();
         }
         $.ajax({
-            url:'https://test.suber360.com//api/v1/sessions.json',
+            url:baseUrl+'/api/v1/sessions.json',
             type:'POST',
             data:{
                 'user[phone]':phone,
